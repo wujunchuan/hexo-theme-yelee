@@ -9,12 +9,12 @@ Yelee: "3.5"
 menu:
   主页: /
   所有文章: /archives/
-  #随笔: /tags/随笔
-  标签云: /tags/
-  关于我: /about/
+  编程: /tags/编程
+  杂谈: /tags/杂谈
+  #关于我: /about/
 
 # Link to your avatar | 填写头像地址
-avatar: /img/avatar.png
+avatar: http://7xvzr6.com1.z0.glb.clouddn.com/head4.jpg
 
 # Small icon of Your site | 站点小图标地址
 favicon: /favicon.png
@@ -28,7 +28,7 @@ favicon: /favicon.png
 ## If your site' url is 'http://yoursite.com/blog', set root_url as '/blog/'
 ## 网站若存放在子目录，请按上面格式填写
 ## https://hexo.io/docs/configuration.html#URL
-root_url: 
+#root_url: 
 
 # Year of Site Creation | 网站成立年份
 since: 2016
@@ -40,12 +40,14 @@ since: 2016
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  Email: "mailto:123@123.com"
+  GitHub: "https://github.com/wujunchuan"
+  知乎: "https://www.zhihu.com/people/wu-jun-chuan"
+  #Email: "mailto:wujunchuan1994@hotmail.com"
+  Facebook: "https://www.facebook.com/junchuan.wu"
+  Twitter: "https://twitter.com/wujunchuan1994"
   #新浪微博: "sina weibo"
-  GitHub: "#"
   #V2EX: "#"
-  RSS: "/atom.xml"
-  #知乎: "zhihu"
+  #RSS: "/atom.xml"
   #豆瓣: "douban"
   #简书: "jianshu"
   #SegmentFault: ""
@@ -58,9 +60,7 @@ subnav:
   #AcFun: ""
   #niconico: ""
   #Quora: ""
-  #Facebook: "#"
   #Google: "#"
-  #Twitter: "#"
   #LinkedIn: "#"
   #QQ: "#"
   #微信: "Wechat"
@@ -85,7 +85,7 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: false
+show_count: true
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
@@ -97,8 +97,8 @@ disqus:
   # you have set "disqus_shortname" in your site's "_config.yml" 
 
 duoshuo: 
-  #on: true
-  domain: 
+  on: true
+  domain: johntrump
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
@@ -122,27 +122,27 @@ background_image: 5
 # Base Font Size | 字号调节
 base_font_size: 16  #px, 16 - 24
 
-## General Color Scheme | 主题配色方案 
+## General Color Scheme | 主题配色方案
 ## 可用值 Value: yilia
-color_scheme: 
+color_scheme: yilia
 
 highlight_style:
-  #on: true
-  inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4 
+  on: true
+  inline_code: 4  # Value: 0 - 9 可选
+  code_block: 4  # Value: 0 - 4
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
   # 通过 code_block 切换内置代码高亮配色主题
 
 blockquote_style:
-  #on: true
-  blockquote: 1  # Value: 0 - 7 可选
+  on: true
+  blockquote: 4  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
 # Headings Style | 标题风格
 ## 0-Yelee, 1-Yilia, 2-GitHub
-heading_style: 0 # Value: 0 - 2
+heading_style: 2 # Value: 0 - 2
 
 ## List style type (ul) | 无序列表项标记样式
 list_style: 0  # value: 0 - 12 可选
@@ -158,7 +158,7 @@ toc:
   on: true
   list_number: true # 目录序号
   max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
-  nowrap: false # Keep title on same line | 目录标题不换行
+  nowrap: true # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -167,11 +167,6 @@ animate: true
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
 jquery_ui: false
-
-# Max width of right cloumn | 限制右侧内容的宽带 
-limit_article_width: 
-  on: false
-  max_width: 60 # em
 
 # >>> Small features | 小功能设置 <<<
 
@@ -187,7 +182,7 @@ friends:
 #friends: false
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 面向对象面向君，不负代码不负卿。一个广泛涉猎无一精通乱点技能树的低级程序猿。
 #aboutme: false
 
 # Open link in a new tab | 是否在新窗口打开链接
@@ -196,7 +191,7 @@ aboutme: 专注于前端
 open_in_new:
   global: 0 # 0-2
   title: false # article title in homepage 主页文章标题
-  post: false # link within post/page 正文中的链接
+  post: true # link within post/page 正文中的链接
   tags: false # 标签
   categories: false # 分类
   article_nav: false # 导航
@@ -207,7 +202,7 @@ open_in_new:
   socail: true # 社交图标
 
 # Customize feed link 自定义订阅地址
-rss: /atom.xml
+#rss: /atom.xml
 
 # Update Reminder for IE6/7/8
 # 针对 IE6/7/8 的升级浏览器提示
