@@ -9,8 +9,6 @@ Yelee: "3.5"
 menu:
   主页: /
   所有文章: /archives/
-  编程: /tags/编程
-  杂谈: /tags/杂谈
   #关于我: /about/
 
 # Link to your avatar | 填写头像地址
@@ -182,7 +180,7 @@ friends:
 #friends: false
 
 #是否开启“关于我”。
-aboutme: 面向对象面向君，不负代码不负卿。一个广泛涉猎无一精通乱点技能树的低级程序猿。
+aboutme: 保持好奇,虚心接纳
 #aboutme: false
 
 # Open link in a new tab | 是否在新窗口打开链接
